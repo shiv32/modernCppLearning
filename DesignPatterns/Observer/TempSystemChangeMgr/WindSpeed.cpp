@@ -1,7 +1,9 @@
 #include "WindSpeed.h"
+#include <iostream>
 
 void WindSpeed::SetSpeed(float speed)
 {
+	std::cout << "\n\n---------- WIND CHANGED ------------\n";
 	m_Speed = speed;
 	Notify();
 }

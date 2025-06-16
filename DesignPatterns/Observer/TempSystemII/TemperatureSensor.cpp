@@ -35,5 +35,6 @@ void TemperatureSensor::SetTemp(float value)
 	std::cout << "\n\n---------- TEMPERATURE CHANGED ------------\n";
 	m_Change = abs(m_Temperature - value);
 	m_Temperature = value;
+	
 	Notify(m_Temperature);
 }
