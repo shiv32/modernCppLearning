@@ -13,13 +13,13 @@ void AbstractClass::PrimitiveOperation4()
 
 void AbstractClass::TemplateMethod()
 {
-	//varying step
+	// varying step
 	PrimitiveOperation1();
 	PrimitiveOperation2();
 
-    //optional step (hook)
+	// optional step (hook)
 	PrimitiveOperation3();
-	
-	//fixed step
+
+	// fixed step
 	PrimitiveOperation4();
 }
