@@ -1,11 +1,13 @@
 #include "LocalHelp.h"
 
-void LocalHelp::ShowHelp(const std::string& topic) {
-	if (topic == "saveptions") {
+void LocalHelp::ShowHelp(const std::string &topic)
+{
+	if (topic == "options")
+	{
 		std::cout << "[LocalHelp] Save options\n";
 	}
-	else {
+	else
+	{
 		HelpHandler::ShowHelp(topic);
 	}
 }
-template void Foo(int) ;

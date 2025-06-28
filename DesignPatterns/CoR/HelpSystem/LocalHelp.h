@@ -1,10 +1,9 @@
 #pragma once
 #include "HelpHandler.h"
-class LocalHelp :
-    public HelpHandler
+
+class LocalHelp : public HelpHandler
 {
 
 public:
-	void ShowHelp(const std::string& topic) override;
+    void ShowHelp(const std::string &topic) override;
 };
-

@@ -3,15 +3,21 @@
 #include "OnlineHelp.h"
 #include "QuickHelp.h"
 
-int main() {
-	OnlineHelp online{} ;
-	LocalHelp local{} ;
-	QuickHelp quick{} ;
+int main()
+{
+	system("clear && printf '\e[3J'"); // clean the terminal before output in linux
 
-	quick.SetSuccessor(&local) ;
-	local.SetSuccessor(&online) ;
+	OnlineHelp online{};
+	LocalHelp local{};
+	QuickHelp quick{};
 
-	Button btn ;
-	btn.SetHelpHandler(&quick) ;
-	btn.RequestHelp("connection") ;
+	quick.SetSuccessor(&local);
+	local.SetSuccessor(&online);
+
+	Button btn;
+	btn.SetHelpHandler(&quick);
+	
+	btn.RequestHelp("settings");
+	//btn.RequestHelp("options");
+	//btn.RequestHelp("color");
 }
