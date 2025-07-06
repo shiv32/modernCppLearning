@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "ConsoleLogger.h"
 #include "DbLogger.h"
 #include "FileLogger.h"
@@ -10,7 +9,6 @@ int main()
 	system("clear && printf '\e[3J'"); // clean the terminal before output in linux
 
 	FileLogger fl{nullptr, "mylog.txt"};
-
 	DbLogger dl{&fl};
 	ConsoleLogger cl{&dl};
 
