@@ -21,19 +21,7 @@ int main()
 
 	app.OnStart();
 	app.OnUserLogged();
+	app.ExportFile();
 	app.OnDataRequested();
 	app.OnExit();
-
-	// FileLogger fl{nullptr, "mylog.txt" } ;
-	// DbLogger dl{&fl} ;
-	// ConsoleLogger cl{&dl} ;
-
-	////loggers.push_back(&cl) ;
-	// Logger *pLog = &cl ;
-	//
-	// pLog->Log("Application started", "CONSOLE") ;
-	// pLog->Log("User did not specify the parameter", "DB") ;
-	// pLog->Log("Failed to load the library", "DB") ;
-	// pLog->Log("The library does not contain the entry point", "FILE") ;
-	// pLog->Log("Application shutdown", "CONSOLE") ;
 }
