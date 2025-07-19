@@ -5,15 +5,15 @@ class Command;
 
 class FindDialog
 {
-    std::string m_SearchText{} ;
-    Command *m_pCmd{} ;
-  public:
-    FindDialog(Command* mPCmd)
-        : m_pCmd{mPCmd}
-    {
-    }
+  std::string m_SearchText{};
+  Command *m_pCmd{};
 
-    void SetSearchText(const std::string &text) ;
-    void Find() ;
+public:
+  FindDialog(Command *mPCmd)
+      : m_pCmd{mPCmd}
+  {
+  }
+
+  void SetSearchText(const std::string &text);
+  void Find();
 };
-
